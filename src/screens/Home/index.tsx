@@ -1,14 +1,14 @@
 import React from 'react';
-import {Text} from 'react-native';
+import CustomText from '../../components/atoms/CustomText';
 
-import {Container} from './styles';
+import { Container } from './styles';
 
 interface IHomeProps {}
 
 const Home: React.FC<IHomeProps> = () => {
   return (
     <Container>
-      <Text>Home</Text>
+      <CustomText>Home</CustomText>
     </Container>
   );
 };
