@@ -7,9 +7,24 @@ const Tab = createBottomTabNavigator();
 
 const TabRoutes: React.FC = () => {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Profile" component={Profile} />
+    <Tab.Navigator
+      screenOptions={{
+        headerTitleAlign: 'center',
+      }}>
+      <Tab.Screen
+        name="HomeScreen"
+        options={{
+          title: 'Home',
+        }}
+        component={Home}
+      />
+      <Tab.Screen
+        name="ProfileScreen"
+        options={{
+          title: 'Perfil',
+        }}
+        component={Profile}
+      />
     </Tab.Navigator>
   );
 };
