@@ -16,9 +16,9 @@ const TabRoutes: React.FC = () => {
     <Tab.Navigator
       screenOptions={{
         tabBarStyle: {
-          paddingBottom: scaleSize(16),
-          paddingTop: scaleSize(16),
-          height: scaleSize(73),
+          paddingBottom: 16,
+          paddingTop: 16,
+          height: 73,
         },
         tabBarLabelStyle: { marginTop: scaleSize(5), fontSize: scaleSize(12) },
         tabBarActiveTintColor: COLORS.primary,
@@ -35,6 +35,7 @@ const TabRoutes: React.FC = () => {
         name="HomeScreen"
         options={{
           title: 'Home',
+          headerShown: false,
           tabBarIcon: ({ focused }) =>
             focused ? <IconHomeActive /> : <IconHomeInative />,
         }}
